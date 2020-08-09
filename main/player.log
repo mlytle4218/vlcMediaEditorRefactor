@@ -1,0 +1,1292 @@
+INFO:root:main init
+INFO:root:FileActions init
+INFO:root:main init
+INFO:root:10
+INFO:root:FileActions init
+INFO:root:main init
+INFO:root:10
+INFO:root:FileActions init
+INFO:root:main init
+INFO:root:FileActions init
+INFO:root:main init
+INFO:root:FileActions init
+INFO:root:main init
+INFO:root:FileActions init
+INFO:root:main init
+INFO:root:FileActions init
+INFO:root:main init
+INFO:root:FileActions init
+WARNING:root:No state file found
+WARNING:root:'object' object has no attribute 'marks'
+INFO:root:main init
+INFO:root:FileActions init
+INFO:root:main init
+INFO:root:FileActions init
+WARNING:root:No state file found
+WARNING:root:'object' object has no attribute 'marks'
+INFO:root:268000
+INFO:root:268000
+INFO:root:main init
+INFO:root:FileActions init
+INFO:root:main init
+INFO:root:FileActions init
+WARNING:root:No state file found
+INFO:root:<state.State object at 0x7f23305eb0a0>
+WARNING:root:'object' object has no attribute 'marks'
+INFO:root:main init
+INFO:root:FileActions init
+WARNING:root:No state file found
+INFO:root:<state.State object at 0x7f1e46634280>
+WARNING:root:'object' object has no attribute 'marks'
+INFO:root:268000
+INFO:root:main init
+INFO:root:FileActions init
+INFO:root:main init
+INFO:root:FileActions init
+WARNING:root:No state file found
+INFO:root:<state.State object at 0x7fd1bc28c280>
+INFO:root:268000
+INFO:root:main init
+INFO:root:FileActions init
+INFO:root:main init
+INFO:root:FileActions init
+WARNING:root:No state file found
+INFO:root:<state.State object at 0x7f4aa618e280>
+INFO:root:{'marks': [], 'duration': 268000}
+INFO:root:268000
+INFO:root:main init
+INFO:root:FileActions init
+INFO:root:{'marks': [], 'duration': 268000}
+INFO:root:main init
+INFO:root:FileActions init
+INFO:root:{'marks': [], 'duration': 268000}
+INFO:root:main init
+INFO:root:FileActions init
+INFO:root:{'marks': [], 'duration': 268000}
+INFO:root:main init
+INFO:root:FileActions init
+INFO:root:{'marks': [], 'duration': 268000}
+INFO:root:main init
+INFO:root:FileActions init
+INFO:root:main init
+INFO:root:FileActions init
+INFO:root:main init
+INFO:root:FileActions init
+INFO:root:main init
+INFO:root:FileActions init
+INFO:root:main init
+INFO:root:FileActions init
+INFO:root:None
+INFO:root:main init
+INFO:root:FileActions init
+INFO:root:None
+INFO:root:main init
+INFO:root:FileActions init
+INFO:root:None
+INFO:root:main init
+INFO:root:FileActions init
+INFO:root:None
+INFO:root:main init
+INFO:root:FileActions init
+INFO:root:main init
+INFO:root:FileActions init
+INFO:root:jump forward
+INFO:root:main init
+INFO:root:FileActions init
+INFO:root:main init
+INFO:root:FileActions init
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:jump forward
+DEBUG:root:jump forward
+INFO:root:main init
+INFO:root:FileActions init
+DEBUG:root:jump forward
+DEBUG:root:else:
+INFO:root:main init
+INFO:root:FileActions init
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.002158557530492544
+DEBUG:root:5000
+DEBUG:root:5000.0021585575305
+INFO:root:main init
+INFO:root:FileActions init
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.0021586313378065825
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.02081534775571703
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.025826923549175262
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.04448363996708571
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.049731213599443436
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.06838793001735388
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.07267836481332779
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.09133508123123824
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.0924210399389267
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.11107775635683714
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.11226100474596024
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.13091772116387068
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.13210059702396393
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.15075731344187437
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.15184223651885986
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.1704989529367703
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.17049895226955414
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.18915566868746458
+DEBUG:root:else:
+DEBUG:root:0.19129401445388794
+DEBUG:root:-0.018656716417910446
+DEBUG:root:0.1726372980359775
+DEBUG:root:else:
+DEBUG:root:0.174775168299675
+DEBUG:root:-0.018656716417910446
+DEBUG:root:0.15611845188176454
+DEBUG:root:else:
+DEBUG:root:0.15720264613628387
+DEBUG:root:-0.018656716417910446
+DEBUG:root:0.13854592971837343
+DEBUG:root:else:
+DEBUG:root:0.13963042199611664
+DEBUG:root:-0.018656716417910446
+DEBUG:root:0.12097370557820619
+DEBUG:root:else:
+DEBUG:root:0.12205787748098373
+DEBUG:root:-0.018656716417910446
+DEBUG:root:0.10340116106307329
+DEBUG:root:else:
+DEBUG:root:0.10340116173028946
+DEBUG:root:-0.018656716417910446
+DEBUG:root:0.08474444531237901
+DEBUG:root:else:
+DEBUG:root:0.08474444597959518
+DEBUG:root:-0.018656716417910446
+DEBUG:root:0.06608772956168474
+DEBUG:root:else:
+DEBUG:root:0.0671713650226593
+DEBUG:root:-0.018656716417910446
+DEBUG:root:0.048514648604748856
+DEBUG:root:else:
+DEBUG:root:0.04959860444068909
+DEBUG:root:-0.018656716417910446
+DEBUG:root:0.03094188802277864
+DEBUG:root:else:
+DEBUG:root:0.030941888689994812
+DEBUG:root:-0.018656716417910446
+DEBUG:root:0.012285172272084366
+DEBUG:root:if (currentPos + offSet) < 0:
+DEBUG:root:if (currentPos + offSet) < 0:
+DEBUG:root:if (currentPos + offSet) < 0:
+DEBUG:root:if (currentPos + offSet) < 0:
+DEBUG:root:if (currentPos + offSet) < 0:
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.004292091820389032
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.02294880823829948
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.024036245420575142
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.04269296183848559
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.042692963033914566
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.06134967945182501
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.06134967878460884
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.08000639520251929
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.08000639826059341
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.09866311467850386
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.09866311401128769
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.11731983042919814
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.11850452423095703
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.13716124064886748
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.1371612399816513
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.15581795639956175
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.15581795573234558
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.17447467215025603
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.17447467148303986
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.1931313879009503
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.19313138723373413
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.21178810365164458
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.2117881029844284
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.23044481940233885
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.23044481873512268
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.24910153515303313
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.24910153448581696
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.2677582509037274
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.26775825023651123
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.2864149666544217
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.2864149808883667
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.30507169730627715
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.30507171154022217
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.3237284279581326
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.32372844219207764
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.3423851586099881
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.3423851728439331
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.36104188926184355
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.3610419034957886
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.379698619913699
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.37969863414764404
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.3983553505655545
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.3983553647994995
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.41701208121740996
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.417012095451355
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.4356688118692654
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.43566882610321045
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.4543255425211209
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.4543255567550659
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.47298227317297636
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.4729822874069214
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.49163900382483183
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.49163901805877686
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.5102957344766873
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.5102957487106323
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.5289524651285428
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.5289524793624878
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.5476091957803982
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.5476092100143433
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.5662659264322537
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.5662659406661987
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.5849226570841092
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.5849226713180542
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.6035793877359646
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.6035794019699097
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.6222361183878201
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.6222361326217651
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.6408928490396756
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.6408928632736206
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.659549579691531
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.6595495939254761
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.6782063103433865
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.6782063245773315
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.696863040995242
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.696863055229187
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.7155197716470975
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.7155197858810425
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.7341765022989529
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.734176516532898
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.7528332329508084
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.7528332471847534
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.7714899636026639
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.7714899778366089
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.7901466942545193
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.7901467084884644
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.8088034249063748
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.8088034391403198
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.8274601555582303
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.828643262386322
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.8472999788042325
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.8472999930381775
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.8659567094560879
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.865956723690033
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.8846134401079434
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.8846134543418884
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.9032701707597989
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.9032701849937439
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.9219269014116543
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.9219269156455994
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.9405836320635098
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.9405836462974548
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.9592403627153653
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.9592403769493103
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.9778970933672207
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.9778971076011658
+DEBUG:root:0.018656716417910446
+DEBUG:root:0.9965538240190762
+DEBUG:root:jump forward
+DEBUG:root:else:
+DEBUG:root:0.9976389408111572
+DEBUG:root:0.018656716417910446
+DEBUG:root:1.0162956572290676
+DEBUG:root:jump forward
+DEBUG:root:jump forward
+DEBUG:root:jump forward
+DEBUG:root:jump forward
+DEBUG:root:jump forward
+DEBUG:root:jump forward
+DEBUG:root:jump forward
+DEBUG:root:jump forward
+DEBUG:root:jump forward
+DEBUG:root:jump forward
+DEBUG:root:jump forward
+DEBUG:root:jump forward
+DEBUG:root:jump forward
+DEBUG:root:jump forward
+DEBUG:root:jump forward
+DEBUG:root:jump forward
+DEBUG:root:jump forward
+DEBUG:root:jump forward
+DEBUG:root:jump forward
+DEBUG:root:jump forward
+DEBUG:root:jump forward
+DEBUG:root:jump forward
+DEBUG:root:jump forward
+DEBUG:root:jump forward
+DEBUG:root:jump forward
+INFO:root:main init
+INFO:root:FileActions init
+DEBUG:root:jump forward
+INFO:root:main init
+INFO:root:FileActions init
+DEBUG:root:jump forward
+DEBUG:root:0.0021584618370980024
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.02487191930413246
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.045670878142118454
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.06541541963815689
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.08407213538885117
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.10272885113954544
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.12138556689023972
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.1400422900915146
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.15869900584220886
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.17735572159290314
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.1960124373435974
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.2146691530942917
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.23332586884498596
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.25198259949684143
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.2706393301486969
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.28929606080055237
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.30795279145240784
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.3266095221042633
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.3452662527561188
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.36392298340797424
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.3825797140598297
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.4012364447116852
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.41989317536354065
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.43973132967948914
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.4583880603313446
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.4770447909832001
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.49570152163505554
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.5143582224845886
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.5330149531364441
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.5516716837882996
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.570328414440155
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.5889851450920105
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.607641875743866
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.6262986063957214
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.6449553370475769
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.6636120676994324
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.6822687983512878
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.7009255290031433
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.7195822596549988
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.7382389903068542
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.7568957209587097
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.7755524516105652
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.7942091822624207
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.8128659129142761
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.8315226435661316
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.8501793742179871
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.8688361048698425
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.887492835521698
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.9061495661735535
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.9248062968254089
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.9434630274772644
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.9621197581291199
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.9807764887809753
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.9994332194328308
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+DEBUG:root:jump forward
+DEBUG:root:1.0180898904800415
+INFO:root:main init
+INFO:root:FileActions init
+DEBUG:root:jump forward
+DEBUG:root:0.0
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.020814646035432816
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.040664538741111755
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.061465147882699966
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.08216609805822372
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.100822813808918
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.11947952955961227
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.1393200010061264
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.15797671675682068
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.17663343250751495
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.19529014825820923
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.2139468640089035
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.23260357975959778
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.25126031041145325
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.2699170410633087
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.2885737717151642
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.30723050236701965
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.3258872330188751
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.3445439636707306
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.36320069432258606
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.38185742497444153
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.400514155626297
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.41917088627815247
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.43782761693000793
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.4564843475818634
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.47514107823371887
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.49379780888557434
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.5124545097351074
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.5311112403869629
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.5497679710388184
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.5684247016906738
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.5870814323425293
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.6057381629943848
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.6243948936462402
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.6430516242980957
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.6617083549499512
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.6803650856018066
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.6990218162536621
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.7176785469055176
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.736335277557373
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.7549920082092285
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.773648738861084
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.7923054695129395
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.8109622001647949
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.8296189308166504
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.8482756614685059
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.8669323921203613
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.8855891227722168
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.9042458534240723
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.9229025840759277
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.9415593147277832
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.9602160453796387
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.9788727760314941
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:0.9975295066833496
+DEBUG:root:else:
+DEBUG:root:jump forward
+DEBUG:root:1.016186237335205
+DEBUG:root:jump forward
+DEBUG:root:1.016186237335205
+DEBUG:root:jump forward
+DEBUG:root:1.016186237335205
+DEBUG:root:jump forward
+DEBUG:root:1.016186237335205
+DEBUG:root:jump forward
+DEBUG:root:1.016186237335205
+DEBUG:root:jump forward
+DEBUG:root:1.016186237335205
+DEBUG:root:jump forward
+DEBUG:root:1.016186237335205
+DEBUG:root:jump forward
+DEBUG:root:1.016186237335205
+DEBUG:root:jump forward
+DEBUG:root:1.016186237335205
+DEBUG:root:jump forward
+DEBUG:root:1.016186237335205
+DEBUG:root:jump forward
+DEBUG:root:1.016186237335205
+DEBUG:root:jump forward
+DEBUG:root:1.016186237335205
+DEBUG:root:jump forward
+DEBUG:root:1.016186237335205
+DEBUG:root:jump forward
+DEBUG:root:1.016186237335205
+DEBUG:root:jump forward
+DEBUG:root:1.016186237335205
+DEBUG:root:jump forward
+DEBUG:root:1.016186237335205
+DEBUG:root:jump forward
+DEBUG:root:1.016186237335205
+DEBUG:root:jump forward
+DEBUG:root:1.016186237335205
+DEBUG:root:jump forward
+DEBUG:root:1.016186237335205
+DEBUG:root:jump forward
+DEBUG:root:1.016186237335205
+DEBUG:root:jump forward
+DEBUG:root:1.016186237335205
+DEBUG:root:jump forward
+DEBUG:root:1.016186237335205
+DEBUG:root:jump forward
+DEBUG:root:1.016186237335205
+DEBUG:root:jump forward
+DEBUG:root:1.016186237335205
+DEBUG:root:jump forward
+DEBUG:root:1.016186237335205
+DEBUG:root:jump forward
+DEBUG:root:1.016186237335205
+DEBUG:root:jump forward
+DEBUG:root:1.016186237335205
+DEBUG:root:jump forward
+DEBUG:root:1.016186237335205
+DEBUG:root:jump forward
+DEBUG:root:1.016186237335205
+DEBUG:root:jump forward
+DEBUG:root:1.016186237335205
+DEBUG:root:1.016186237335205
+DEBUG:root:1.016186237335205
+DEBUG:root:1.016186237335205
+DEBUG:root:1.016186237335205
+INFO:root:main init
+INFO:root:FileActions init
+INFO:root:main init
+INFO:root:FileActions init
+INFO:root:main init
+DEBUG:root:../rusty-original.mp3
+INFO:root:FileActions init
+INFO:root:main init
+INFO:root:Loding file: ../rusty-original.mp3
+INFO:root:FileActions init
+INFO:root:Loading file: ../rusty-original.mp3
+INFO:root:Loading file: ../rusty-original.mp3
+INFO:root:FileActions init
+INFO:root:Loading file: ../rusty-original.mp3
+INFO:root:FileActions init
+INFO:root:Loading file: ../rusty-original.mp3
+INFO:root:FileActions init
+DEBUG:root:<vlc.MediaPlayer object at 0x7f8655f82250>
+INFO:root:Loading file: ../rusty-original.mp3
+INFO:root:FileActions init
+INFO:root:Loading file: ../rusty-original.mp3
+INFO:root:FileActions init
+DEBUG:root:{'_as_parameter_': c_void_p(94688774413504), '_instance': <vlc.Instance object at 0x7ff1c26d61f0>}
+INFO:root:Loading file: ../rusty-original.mp3
+INFO:root:FileActions init
+DEBUG:root:{'_as_parameter_': c_void_p(94184348657808)}
+INFO:root:Loading file: ../leg.mp4
+INFO:root:FileActions init
+WARNING:root:No state file found
+INFO:root:<state.State object at 0x7f36d417ab20>
+INFO:root:get_length()
+INFO:root:-1
+INFO:root:get_length()
+INFO:root:0
+INFO:root:get_time()
+INFO:root:0
+DEBUG:root:7351
+DEBUG:root:8101
+DEBUG:root:8101
+DEBUG:root:8101
+DEBUG:root:8601
+DEBUG:root:8851
+DEBUG:root:8851
+DEBUG:root:8851
+DEBUG:root:9601
+DEBUG:root:9601
+DEBUG:root:10101
+INFO:root:Loading file: ../leg.mp4
+INFO:root:FileActions init
+INFO:root:Loading file: ../leg.mp4
+INFO:root:FileActions init
+INFO:root:get_length()
+INFO:root:-1
+INFO:root:get_length()
+INFO:root:0
+INFO:root:get_time()
+INFO:root:0
+DEBUG:root:2351
+DEBUG:root:2851
+DEBUG:root:2851
+DEBUG:root:3351
+DEBUG:root:3601
+DEBUG:root:3601
+DEBUG:root:3601
+DEBUG:root:4101
+DEBUG:root:4101
+DEBUG:root:4351
+DEBUG:root:4351
+DEBUG:root:4351
+DEBUG:root:4851
+DEBUG:root:4851
+DEBUG:root:4851
+DEBUG:root:5351
+DEBUG:root:5351
+DEBUG:root:5601
+DEBUG:root:5601
+DEBUG:root:5601
+DEBUG:root:6101
+DEBUG:root:6101
+DEBUG:root:6101
+DEBUG:root:6601
+DEBUG:root:6601
+DEBUG:root:6601
+DEBUG:root:7101
+DEBUG:root:7101
+DEBUG:root:7101
+DEBUG:root:7600
+DEBUG:root:7600
+DEBUG:root:7851
+DEBUG:root:7851
+DEBUG:root:7851
+DEBUG:root:8351
+DEBUG:root:8351
+DEBUG:root:9101
+DEBUG:root:9101
+DEBUG:root:9101
+DEBUG:root:9101
+DEBUG:root:9101
+DEBUG:root:9101
+DEBUG:root:9101
+DEBUG:root:9101
+DEBUG:root:9101
+DEBUG:root:9101
+DEBUG:root:9101
+DEBUG:root:9101
+DEBUG:root:9101
+DEBUG:root:9101
+DEBUG:root:9101
+DEBUG:root:9600
+DEBUG:root:9600
+DEBUG:root:9600
+DEBUG:root:9600
+DEBUG:root:9600
+DEBUG:root:9600
+DEBUG:root:9600
+DEBUG:root:9851
+DEBUG:root:9851
+DEBUG:root:9851
+DEBUG:root:9851
+DEBUG:root:9851
+DEBUG:root:9851
+DEBUG:root:9851
+DEBUG:root:9851
+DEBUG:root:9851
+DEBUG:root:9851
+DEBUG:root:9851
+DEBUG:root:9851
+DEBUG:root:9851
+DEBUG:root:9851
+DEBUG:root:9851
+DEBUG:root:10351
+DEBUG:root:10351
+DEBUG:root:10351
+DEBUG:root:10351
+DEBUG:root:10351
+DEBUG:root:10351
+DEBUG:root:10351
+DEBUG:root:10351
+DEBUG:root:10351
+DEBUG:root:10351
+DEBUG:root:10351
+DEBUG:root:10351
+DEBUG:root:10351
+DEBUG:root:10351
+DEBUG:root:10351
+DEBUG:root:10851
+DEBUG:root:10851
+DEBUG:root:10851
+DEBUG:root:10851
+DEBUG:root:10851
+DEBUG:root:10851
+DEBUG:root:10851
+DEBUG:root:10851
+DEBUG:root:10851
+DEBUG:root:10851
+DEBUG:root:10851
+DEBUG:root:10851
+DEBUG:root:10851
+DEBUG:root:10851
+DEBUG:root:10851
+DEBUG:root:11351
+DEBUG:root:11351
+DEBUG:root:11351
+DEBUG:root:11351
+DEBUG:root:11351
+DEBUG:root:11351
+DEBUG:root:11351
+DEBUG:root:11351
+DEBUG:root:11351
+DEBUG:root:11351
+DEBUG:root:11351
+DEBUG:root:11351
+DEBUG:root:11351
+DEBUG:root:11351
+DEBUG:root:11351
+DEBUG:root:11850
+DEBUG:root:11850
+DEBUG:root:11850
+DEBUG:root:11850
+DEBUG:root:11850
+DEBUG:root:11850
+DEBUG:root:11850
+DEBUG:root:11850
+DEBUG:root:12100
+DEBUG:root:12100
+DEBUG:root:12100
+DEBUG:root:12100
+DEBUG:root:12100
+DEBUG:root:12100
+DEBUG:root:12100
+DEBUG:root:12100
+DEBUG:root:12100
+DEBUG:root:12100
+DEBUG:root:12100
+DEBUG:root:12100
+DEBUG:root:12100
+DEBUG:root:12100
+DEBUG:root:12100
+DEBUG:root:12600
+DEBUG:root:12600
+DEBUG:root:12600
+DEBUG:root:12600
+DEBUG:root:12600
+DEBUG:root:12600
+DEBUG:root:12600
+DEBUG:root:12850
+DEBUG:root:12850
+DEBUG:root:12850
+DEBUG:root:12850
+DEBUG:root:12850
+DEBUG:root:12850
+DEBUG:root:12850
+DEBUG:root:12850
+DEBUG:root:12850
+DEBUG:root:12850
+DEBUG:root:12850
+DEBUG:root:12850
+DEBUG:root:12850
+DEBUG:root:12850
+DEBUG:root:12850
+DEBUG:root:13350
+DEBUG:root:13350
+DEBUG:root:13350
+DEBUG:root:13350
+DEBUG:root:13350
+DEBUG:root:13350
+DEBUG:root:13350
+DEBUG:root:13350
+DEBUG:root:13350
+DEBUG:root:13350
+DEBUG:root:13350
+DEBUG:root:13350
+DEBUG:root:13350
+DEBUG:root:13350
+DEBUG:root:13350
+DEBUG:root:13850
+DEBUG:root:13850
+DEBUG:root:13850
+DEBUG:root:13850
+DEBUG:root:13850
+DEBUG:root:13850
+DEBUG:root:13850
+DEBUG:root:13850
+DEBUG:root:13850
+DEBUG:root:13850
+DEBUG:root:13850
+DEBUG:root:13850
+DEBUG:root:13850
+DEBUG:root:13850
+DEBUG:root:13850
+DEBUG:root:14350
+DEBUG:root:14350
+DEBUG:root:14350
+DEBUG:root:14350
+DEBUG:root:14350
+DEBUG:root:14350
+DEBUG:root:14350
+DEBUG:root:14350
+DEBUG:root:14350
+DEBUG:root:14350
+DEBUG:root:14350
+DEBUG:root:14350
+DEBUG:root:14350
+DEBUG:root:14350
+DEBUG:root:14350
+DEBUG:root:14851
+DEBUG:root:14851
+DEBUG:root:14851
+DEBUG:root:14851
+DEBUG:root:14851
+DEBUG:root:14851
+DEBUG:root:14851
+DEBUG:root:14851
+DEBUG:root:14851
+DEBUG:root:14851
+DEBUG:root:14851
+DEBUG:root:14851
+DEBUG:root:14851
+DEBUG:root:14851
+DEBUG:root:14851
+DEBUG:root:15350
+DEBUG:root:15350
+DEBUG:root:15350
+DEBUG:root:15350
+DEBUG:root:15350
+DEBUG:root:15350
+DEBUG:root:15350
+DEBUG:root:15350
+DEBUG:root:15350
+DEBUG:root:15350
+DEBUG:root:15350
+DEBUG:root:15350
+DEBUG:root:15350
+DEBUG:root:15350
+DEBUG:root:15350
+DEBUG:root:15850
+DEBUG:root:15850
+DEBUG:root:15850
+DEBUG:root:15850
+DEBUG:root:15850
+INFO:root:Loading file: ../rusty-original.mp3
+INFO:root:FileActions init
+INFO:root:/home/marc/Desktop/chime/vlcMediaEditor/main/../rusty-original.mp3
+INFO:root:Loading file: ../rusty-original.mp3
+INFO:root:FileActions init
+INFO:root:/home/marc/Desktop/chime/vlcMediaEditor/main/../rusty-original.mp3
+INFO:root:WorkerThread stopped
