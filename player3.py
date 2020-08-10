@@ -2,6 +2,7 @@
 # import curses
 from curses import wrapper
 import sys
+import subprocess
 
 #local imports
 from main import start
@@ -19,7 +20,17 @@ if __name__ == "__main__":
             # state = State()
             
             wrapper(start.start, [command, sys.argv[1]])
-            print(len(command))
-            print(command)
+            if len(command) > 0 :
+                process = subprocess.Popen(
+                    command, stdout=subprocess.PIPE, universal_newlines=True)
+                while True:
+                    output = process.stdout.readline()
+                    if output == '' and process.poll() is not None:
+                        break
+                    if output:
+                        print(output.strip())
+
+            # print(len(command))
+            # print(command)
     else:
         print("requires a file to edit")

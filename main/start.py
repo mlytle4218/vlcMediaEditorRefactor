@@ -87,6 +87,7 @@ class start(object):
                         for each in tempCommand:
                             command.append(each)
                         self.pollingThread.join()
+                        self.state.updateState()
                         break
                     else:
                         logging.warning('no bakup file')

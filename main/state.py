@@ -15,6 +15,9 @@ class State():
         self.playBackIterator = 0
         self.workerThreadIterator = 0
 
+    def updateState(self):
+        pass
+
     def setDuration(self, duration):
         self.duration = duration
     
