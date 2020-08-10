@@ -189,6 +189,39 @@ class State():
             return True
         return False
 
+    def beginningToNowEdit(self, currentPos):
+        """
+        Create and save an edit mark point from the current start of the file to
+        the current posisition.
+
+        Parameters
+        ----------
+        currentPos - float - The current position in the media playback
+
+        Returns
+        -------
+        boolean 
+            True if successfully created
+        """
+        pass
+
+    def nowToEndingEdit(self, currentPos):
+        """
+        Create and save an edit mark point from the current position to the end 
+        of the file. 
+
+        Parameters
+        ----------
+        currentPos - float - The current position in the media playback
+
+        Returns
+        -------
+        boolean 
+            True if successfully created
+        """
+        pass
+
+
     def updateScreen(self, message):
         pass
 
@@ -220,7 +253,8 @@ class State():
 
         Returns
         -------
-        Array - Strings representing the ffmpeg command with all the info for 
+        Array
+            Strings representing the ffmpeg command with all the info for 
         successful editing. 
         """
 
