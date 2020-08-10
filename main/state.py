@@ -210,6 +210,18 @@ class State():
     def applyEdits(self, inputFile, outputFile):
         """
         Method to create the final command for editing the original file.
+
+        Parameters
+        ----------
+        inputFile - string - the full path and file name of the media file - in 
+        this case it's the backup file.
+        outputFile - string - the full path and file name of the media file - in
+        this case, it's the original file name. it will be overwritten
+
+        Returns
+        -------
+        Array - Strings representing the ffmpeg command with all the info for 
+        successful editing. 
         """
 
         com = ['ffmpeg', '-i', inputFile]
