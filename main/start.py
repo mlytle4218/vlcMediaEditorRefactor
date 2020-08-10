@@ -103,6 +103,10 @@ class start(object):
                 elif key == config.jump_back:
                     self.con.longJumpBackward()
 
+                # pause/start playback
+                elif key== config.play_pause:
+                    self.con.pausePlay()
+
                 #EDITING
                 elif key == config.mark_start_pos:
                     self.state.startEditPoint(self.con.getPos())

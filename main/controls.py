@@ -33,6 +33,18 @@ class Controls():
 
         self.song.play()
 
+    def pausePlay(self):
+        state = self.song.get_state()
+        # playing
+        if state == 3:
+            self.song.pause()
+        # paused
+        elif state == 4:
+            self.song.play()
+        # stopped
+        elif state == 5:
+            self.song.play()
+
     def getTime(self):
         """
         Method to get the current time of the media in milliseconds - this seems
