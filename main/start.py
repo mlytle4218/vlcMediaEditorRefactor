@@ -83,11 +83,14 @@ class start(object):
                 elif key == config.begin_edits:
                     logging.debug(fa.backup)
                     if fa.backup:
-                        tempCommand = self.applyEdits(self.state.marks, fa.backup, fa.inputFile)
+                        tempCommand = self.applyEdits(
+                            self.state.marks,
+                            fa.backup,
+                            fa.inputFile
+                            )
                         for each in tempCommand:
                             command.append(each)
                         self.pollingThread.join()
-                        self.state.updateState()
                         break
                     else:
                         logging.warning('no bakup file')
@@ -199,7 +202,6 @@ class start(object):
         command.append(outputFile)
         logging.info(command)
         return command
-
 
     def dummy(self):
         """
