@@ -80,16 +80,17 @@ class start(object):
                     self.pollingThread.join()
                     break
                 
+                # Apply the edits to the media file and exit
                 elif key == config.begin_edits:
                     logging.debug(fa.backup)
                     if fa.backup:
-                        tempCommand = self.applyEdits(
-                            self.state.marks,
-                            fa.backup,
-                            fa.inputFile
+                        command.extend(
+                            self.state.applyEdits(
+                                fa.backup,
+                                fa.inputFile
                             )
-                        for each in tempCommand:
-                            command.append(each)
+                        )
+                        self.con.pausePlay()
                         self.pollingThread.join()
                         break
                     else:
@@ -146,66 +147,6 @@ class start(object):
         self.window.refresh()
 
         curses.doupdate()
-
-    def applyEdits(self, marks, inputFile, outputFile):
-        """
-        Method to create the final command for editing the original file.
-        """
-
-        command = ['ffmpeg', '-i', inputFile]
-        select = "select='"
-        aselect = "aselect='"
-
-        # this reorganizes the marks to represent the blocks between the 'removed'
-        # blocks
-        last = 0
-        for each in marks:
-            temp = each.end
-            each.end = each.start
-            each.start = last
-            last = temp
-
-        n = mark.Mark()
-        n.start = last
-        n.end = 1
-        marks.append(n)
-
-        # filter all the ones where start and end are equal
-        marks = list(
-            filter(
-                lambda item: item.start != item.end, marks
-                )
-            )
-
-        for i, each in enumerate(marks):
-            if i == 0:
-                select += """between(t,{},{})""".format(
-                    self.state.positionToMilliseconds(each.start),
-                    self.state.positionToMilliseconds(each.end)
-                )
-                aselect += """between(t,{},{})""".format(
-                    self.state.positionToMilliseconds(each.start),
-                    self.state.positionToMilliseconds(each.end)
-                )
-            else:
-                select += """+between(t,{},{})""".format(
-                    self.state.positionToMilliseconds(each.start),
-                    self.state.positionToMilliseconds(each.end)
-                )
-                aselect += """+between(t,{},{})""".format(
-                    self.state.positionToMilliseconds(each.start),
-                    self.state.positionToMilliseconds(each.end)
-                )
-
-        select += """',setpts=N/FRAME_RATE/TB """
-        aselect += """',asetpts=N/SR/TB"""
-        command.append('-vf')
-        command.append(select)
-        command.append('-af')
-        command.append(aselect)
-        command.append(outputFile)
-        logging.info(command)
-        return command
 
     def dummy(self):
         """

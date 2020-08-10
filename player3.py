@@ -3,6 +3,7 @@
 from curses import wrapper
 import sys
 import subprocess
+import logging
 
 #local imports
 from main import start
@@ -20,6 +21,7 @@ if __name__ == "__main__":
             # state = State()
             
             wrapper(start.start, [command, sys.argv[1]])
+            logging.debug(command)
             if len(command) > 0 :
                 process = subprocess.Popen(
                     command, stdout=subprocess.PIPE, universal_newlines=True)

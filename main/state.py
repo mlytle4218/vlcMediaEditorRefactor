@@ -207,3 +207,55 @@ class State():
         """
         return int(self.duration * position) / 1000 
 
+    def applyEdits(self, inputFile, outputFile):
+        """
+        Method to create the final command for editing the original file.
+        """
+
+        com = ['ffmpeg', '-i', inputFile]
+        select = "select='"
+        aselect = "aselect='"
+
+        # this reorganizes the marks to represent the blocks between the 'removed'
+        # blocks
+        last = 0
+        for each in self.marks:
+            temp = each.end
+            each.end = each.start
+            each.start = last
+            last = temp
+
+        n = mark.Mark()
+        n.start = last
+        n.end = 1
+        self.marks.append(n)
+
+        # filter all the ones where start and end are equal
+        # probably not needed any more
+        marks = list(
+            filter(
+                lambda item: item.start != item.end, self.marks
+                )
+            )
+
+        for i, each in enumerate(marks):
+            bit = """between(t,{},{})""".format(
+                    self.positionToMilliseconds(each.start),
+                    self.positionToMilliseconds(each.end)
+                )
+            if i != 0:
+                select += "+"
+                aselect += "+"
+            
+            select += bit
+            aselect += bit
+
+        select += """',setpts=N/FRAME_RATE/TB """
+        aselect += """',asetpts=N/SR/TB"""
+        com.append('-vf')
+        com.append(select)
+        com.append('-af')
+        com.append(aselect)
+        com.append(outputFile)
+        # logging.info(com)
+        return com
