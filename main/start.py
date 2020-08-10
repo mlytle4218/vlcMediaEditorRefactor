@@ -47,7 +47,7 @@ class start(object):
         # initialize controls for playback
         self.con = controls.Controls(
             self.state.duration,
-            fa.inputFile
+            fa.backup
         )
                 
         # Start the other thread that watches VLC's playback and calls cues when

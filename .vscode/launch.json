@@ -11,7 +11,7 @@
             "request": "launch",
             "program": "player3.py",
             // "args":["../leg.mp4"],
-            "args":["rusty-original.mp3"],
+            "args":["media/rusty-original.mp3"],
             "console": "integratedTerminal"
         }
     ]
