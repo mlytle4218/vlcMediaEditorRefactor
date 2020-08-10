@@ -46,7 +46,7 @@ class WorkerThread(threading.Thread):
                     # self.song.print_to_screen(str(self.current_position))
                     # pass
                     for itr,each in enumerate(self.song.state.marks):
-                        if abs(self.current_position - self.last) is not 0:
+                        if abs(self.current_position - self.last) != 0:
                             # If the start point falls in the range of
                             if self.last < (each.start + self.song.preview) < self.current_position:
                                 logging.debug("print edit to screen at {}".format(self.current_position))
