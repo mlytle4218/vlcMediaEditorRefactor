@@ -134,17 +134,23 @@ class Controls():
                 self.song.play()
                 self.song.set_position(currentPos + offSet)
         else:
-            #offSet tries to go past beginning of file
-            if (currentPos + offSet) < 0:
+            # if the offset doesn't push past the outer bounds of the media
+            # play back, continue
+            if 0 < (currentPos + offSet) < 1:
+                self.song.set_position(currentPos + offSet)
+
+            # offSet tries to go past beginning of file
+            elif (currentPos + offSet) < 0:
                 self.song.set_position(0)
 
-            #offSet tries to go past end of file
+            # offSet tries to go past end of file
             elif (currentPos + offSet) >  self.duration:
-                self.song.set_position(self.duration)
+                # self.song.set_position(self.duration)
+                pass
 
-            #offSet is in valid region
-            else:
-                self.song.set_position(currentPos + offSet)
+            # # offSet is in valid region
+            # else:
+            #     self.song.set_position(currentPos + offSet)
 
 
     
