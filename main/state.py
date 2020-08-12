@@ -164,7 +164,6 @@ class State():
             self.updateScreen('Edit point started.')
             logging.debug('New edit point created at {}'.format(currentPos))
             return True
-
         return False
 
     def endEditPoint(self, currentPos):
@@ -187,6 +186,8 @@ class State():
             logging.debug('New edit point ended at {}'.format(currentPos))
             self.writeStateInformation()
             return True
+        else:
+            self.updateScreen('No current edit.')
         return False
 
     def beginningToNowEdit(self, currentPos):
@@ -203,7 +204,15 @@ class State():
         boolean 
             True if successfully created
         """
-        pass
+        if not self.currentMark:
+            tempMark = mark.Mark()
+            tempMark.start = 0
+            tempMark.end = currentPos
+            self.addMark(tempMark)
+            self.updateScreen('Edit created from beginning of track to now')
+            self.writeStateInformation()
+            return True
+        return False
 
     def nowToEndingEdit(self, currentPos):
         """
@@ -219,7 +228,15 @@ class State():
         boolean 
             True if successfully created
         """
-        pass
+        if not self.currentMark:
+            tempMark = mark.Mark()
+            tempMark.start = currentPos
+            tempMark.end = 1
+            self.addMark(tempMark)
+            self.updateScreen('Edit created from now to end of track')
+            self.writeStateInformation()
+            return True
+        return False
 
 
     def updateScreen(self, message):
