@@ -1,9 +1,11 @@
 #!/env/bin/env python3
 import logging
+import time
 
 #local imports
 from main import config
 from main import vlc
+from main import utils
 
 
 class Controls():
@@ -24,6 +26,7 @@ class Controls():
 
         self.mediaFile = mediaFile
 
+        self.utils = utils.Utils()        
 
         self.VLC = vlc
         self.instance = self.VLC.Instance(('--no-video'))
@@ -152,5 +155,47 @@ class Controls():
             # else:
             #     self.song.set_position(currentPos + offSet)
 
+
+    def jumpSpecificTime(self, input_func, print_func):
+        self.song.pause()
+        forward_input = input_func('forward?',1)
+        if forward_input.decode() == "b":
+            self.song.set_position(0)
+        elif forward_input.decode() == "e":
+            self.song.set_position(1)
+        else:
+            reverse = 1
+            if forward_input.decode() == "-":
+                reverse = -1
+
+            hours = self.getNumFromInput('hours?', input_func, print_func)
+            minutes = self.getNumFromInput('minutes?', input_func, print_func)
+            seconds = self.getNumFromInput('seconds?', input_func, print_func)
+            seconds = seconds + minutes * 60 + hours * 60 * 60 * reverse
+
+            
+
+            if 0 < abs(seconds) < self.duration :
+                self.song.set_position(self.duration / seconds)
+            else:
+                print_func(self.utils.timeStamp(self.duration, seconds))
+        self.song.play()
+
+    def getNumFromInput(self, prompt, input_func, print_func):
+        while True:
+            result = input_func(prompt, 2)
+            if result.decode() == '':
+                return 0
+            try:
+                return int(result)
+            except ValueError as ve:
+                print_func("{} is not a valid option".format(result))
+                time.sleep(2)
+                logging.warning("Error from {}".format(prompt))
+                logging.warning(ve)
+
+
+
+    
 
     

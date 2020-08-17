@@ -238,10 +238,8 @@ class State():
             return True
         return False
 
-
     def updateScreen(self, message):
         pass
-
 
     def positionToMilliseconds(self, position):
         """

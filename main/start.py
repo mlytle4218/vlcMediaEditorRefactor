@@ -11,6 +11,7 @@ from main import controls
 from main import workerThread
 from main import markControls
 from main import mark
+from main import utils
 
 class start(object):
     def __init__(self, window, args):
@@ -55,6 +56,7 @@ class start(object):
         self.pollingThread = workerThread.WorkerThread(self)
         self.pollingThread.start()
         
+        self.utils = utils.Utils()
         
         try:
             self.window = window.subwin(0,0)
@@ -108,15 +110,44 @@ class start(object):
                 elif key== config.play_pause:
                     self.con.pausePlay()
 
+                # jump specific time forward
+                elif key == config.jump_specific:
+                    pass
+
                 #EDITING
+                # create and begin an edit point
                 elif key == config.mark_start_pos:
                     self.state.startEditPoint(self.con.getPos())
 
+                # end and save an edit point
                 elif key == config.mark_end_pos:
                     self.state.endEditPoint(self.con.getPos())
 
+                # create an edit point from beginning of media to now
+                elif key == config.edit_now_to_begining:
+                    self.state.beginningToNowEdit(self.con.getPos())
+
+                # create an edit from now to ending of media
+                elif key == config.edit_now_to_end:
+                    self.state.nowToEndingEdit(self.con.getPos())
+
                 #UTILITIES
-                elif key == ord('w'):
+                elif key == config.file_length:
+                    self.print_to_screen(
+                        self.utils.secondsToTimeStamp(
+                            self.state.duration/1000
+                            )
+                        )
+
+                elif key == config.current_time:
+                    self.print_to_screen(
+                        self.utils.timeStamp(
+                            self.state.duration,
+                            self.con.getPos()
+                        )
+                    )
+
+                elif key == ord('s'):
                     self.state.logState()
 
                 elif key == ord('j'):
@@ -148,6 +179,28 @@ class start(object):
 
         curses.doupdate()
 
+    def getInput(self, prompt, input_length):
+        """
+        Method to get input from the user, more than just one keystroke.
+        
+        Parameters
+        ----------
+        prompt 
+            string - the test explaining for what is asked 
+            
+        input_length
+            int - how many characters to accept from the response
+
+        Returns
+        -------
+        String - resutl from the input method to the number of characters accepted
+        """
+        self.print_to_screen(prompt)
+        curses.echo()
+        input = self.window.getstr(1, 0, input_length)
+        self.window.clear()
+        return input
+ 
     def dummy(self):
         """
         one-liner
