@@ -17,19 +17,25 @@ class Utils():
 
         Returns
         -------
-        string - the milliseconds in the form of hours, minutes and seconds
+        string - the milliseconds in the form of hour, minutes and seconds
         """
-        milliseconds = int(milliseconds/1000)
-        minutes = int((milliseconds / 60) % 60)
-        hours = int((milliseconds / (60*60)) % 3600)
-        sec = int(milliseconds - (minutes * 60) - (hours * 60 *60))
+        seconds = round((milliseconds/1000) % 60, 3)
+        minutes = (milliseconds/(1000*60)) % 60
+        minutes = int(minutes)
+        hours = int((milliseconds/(1000*60*60)) % 24)
         time = ""
-        if hours >= 1:
-            time = "{} hours ".format(hours)
-        if minutes >= 1:
-            time += "{} minutes ".format(minutes)
-        if sec >= 1:
-            time  += "{} seconds".format(sec)
+        if hours > 0:
+            time = "{} hour".format(hours)
+        if hours > 1:
+            time +="s"
+        if minutes > 0:
+            time += " {} minute".format(minutes)
+        if minutes > 1:
+            time += "s"
+        if seconds > 0:
+            time  += " {} second".format(seconds)
+        if seconds > 1:
+            time += "s"
         return time
 
 
@@ -50,23 +56,12 @@ class Utils():
         millis = int(out)
         if millis == 0:
             return '0'
-        seconds = round((millis/1000) % 60, 3)
-        minutes = (millis/(1000*60)) % 60
-        minutes = int(minutes)
-        hours = int((millis/(1000*60*60)) % 24)
-        time = ""
-        if hours >= 1:
-            time = "{} hours ".format(hours)
-        if minutes >= 1:
-            time += "{} minutes ".format(minutes)
-        if seconds >= 1:
-            time  += "{} seconds".format(seconds)
-        return time
+        return self.millisecondsToTimeStamp(millis)
 
 
 if __name__ == "__main__":
     utils = Utils()
-    result = utils.millisecondsToTimeStamp(14643)
+    result = utils.millisecondsToTimeStamp(14643000)
     print(result)
-    result = utils.millisecondsToTimeStamp(268)
+    result = utils.millisecondsToTimeStamp(268000)
     print(result)

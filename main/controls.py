@@ -155,7 +155,6 @@ class Controls():
             # else:
             #     self.song.set_position(currentPos + offSet)
 
-
     def jumpSpecificTime(self, input_func, print_func):
         """
         Method that asks the user which direction and then how far the user wants
@@ -191,7 +190,7 @@ class Controls():
                 self.song.set_position(self.getPos() + seconds/self.duration)
             else:
                 time = self.utils.millisecondsToTimeStamp(abs(seconds))
-                print_func("{} is beyond the confines of the media.".format(time))
+                print_func("{}is beyond the confines of the media.".format(time))
         else :
             print_func("{} is not a valid option".format(direction.decode()))
         self.song.play()

@@ -46,21 +46,21 @@ class WorkerThread(threading.Thread):
                     # self.song.printToScreen(str(self.current_position))
                     # pass
                     for itr,each in enumerate(self.song.state.marks):
-                        if 0 < abs(self.current_position - self.last) < self.difference:
-                            # If the start point falls in the range of
-                            if self.last < (each.start + self.song.preview) < self.current_position:
-                                logging.debug("print edit to screen at {}".format(self.current_position))
-                                self.song.printToScreen("Edit {}".format(itr+1))
+                        # if 0 < abs(self.current_position - self.last) < self.difference:
+                        # If the start point falls in the range of
+                        if self.last < (each.start + self.song.preview) < self.current_position:
+                            logging.debug("print edit to screen at {}".format(self.current_position))
+                            self.song.printToScreen("Edit {}".format(itr+1))
 
-                            # if the start point falls in the range of last and current_position
-                            # then jump to the end
-                            if self.last < each.start < self.current_position:
-                                logging.debug("start jump to screen at {}".format(self.current_position))
-                                logging.debug(each.start)
-                                self.song.con.song.set_position(each.end)
-                                self.song.con.song.pause()
-                                time.sleep(1)
-                                self.song.con.song.play()
+                        # if the start point falls in the range of last and current_position
+                        # then jump to the end
+                        if self.last < each.start < self.current_position:
+                            logging.debug("start jump to screen at {}".format(self.current_position))
+                            logging.debug(each.start)
+                            self.song.con.song.set_position(each.end)
+                            self.song.con.song.pause()
+                            time.sleep(1)
+                            self.song.con.song.play()
 
                     #     if abs(self.current_position - self.last) < self.difference: 
                     #         if self.song.is_editing:
