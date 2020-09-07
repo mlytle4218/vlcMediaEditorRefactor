@@ -43,14 +43,14 @@ class WorkerThread(threading.Thread):
             self.current_position = self.song.con.getPos()
             if abs(self.current_position - self.last) > 0:
                 try:
-                    # self.song.print_to_screen(str(self.current_position))
+                    # self.song.printToScreen(str(self.current_position))
                     # pass
                     for itr,each in enumerate(self.song.state.marks):
-                        if abs(self.current_position - self.last) != 0:
+                        if 0 < abs(self.current_position - self.last) < self.difference:
                             # If the start point falls in the range of
                             if self.last < (each.start + self.song.preview) < self.current_position:
                                 logging.debug("print edit to screen at {}".format(self.current_position))
-                                self.song.print_to_screen("Edit {}".format(itr+1))
+                                self.song.printToScreen("Edit {}".format(itr+1))
 
                             # if the start point falls in the range of last and current_position
                             # then jump to the end
@@ -70,11 +70,11 @@ class WorkerThread(threading.Thread):
                     #             #     self.song.log(res)
                     #             try:
                     #                 if self.last <= each.start <= self.current_position:
-                    #                     self.song.print_to_screen('Block {} start'.format(itr + 1))
+                    #                     self.song.printToScreen('Block {} start'.format(itr + 1))
                     #                     if each.start != 0:
                     #                         self.song.startSound()
                     #                 if self.last <= each.end <= self.current_position:
-                    #                     self.song.print_to_screen('Block {} end'.format(itr + 1))
+                    #                     self.song.printToScreen('Block {} end'.format(itr + 1))
                     #                     self.song.endSound()
                     #             except Exception as ex:
                     #                 self.song.log(ex)
@@ -85,7 +85,7 @@ class WorkerThread(threading.Thread):
                     #                 self.song.markItr = itr
                     #                 self.song.updateIters()
                     #                 self.song.song.set_position(each.end)
-                    #                 self.song.print_to_screen('Block {}'.format(itr + 1))
+                    #                 self.song.printToScreen('Block {}'.format(itr + 1))
                     #                 self.song.song.pause()
                     #                 time.sleep(1)
                     #                 self.song.song.play()

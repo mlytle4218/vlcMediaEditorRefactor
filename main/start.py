@@ -112,7 +112,7 @@ class start(object):
 
                 # jump specific time forward
                 elif key == config.jump_specific:
-                    pass
+                    self.con.jumpSpecificTime(self.getInput, self.printToScreen)
 
                 #EDITING
                 # create and begin an edit point
@@ -133,14 +133,14 @@ class start(object):
 
                 #UTILITIES
                 elif key == config.file_length:
-                    self.print_to_screen(
-                        self.utils.secondsToTimeStamp(
-                            self.state.duration/1000
+                    self.printToScreen(
+                        self.utils.millisecondsToTimeStamp(
+                            self.state.duration
                             )
                         )
 
                 elif key == config.current_time:
-                    self.print_to_screen(
+                    self.printToScreen(
                         self.utils.timeStamp(
                             self.state.duration,
                             self.con.getPos()
@@ -150,7 +150,7 @@ class start(object):
                 elif key == ord('s'):
                     self.state.logState()
 
-                elif key == ord('j'):
+                elif key == ord('u'):
                     logging.debug(self.con.getTime())
                     logging.debug(self.con.getPos())
 
@@ -160,7 +160,7 @@ class start(object):
             pass
 
 
-    def print_to_screen(self, output):
+    def printToScreen(self, output):
         """
         Method that prints the time (formatted) of the current postion
 
@@ -195,7 +195,7 @@ class start(object):
         -------
         String - resutl from the input method to the number of characters accepted
         """
-        self.print_to_screen(prompt)
+        self.printToScreen(prompt)
         curses.echo()
         input = self.window.getstr(1, 0, input_length)
         self.window.clear()

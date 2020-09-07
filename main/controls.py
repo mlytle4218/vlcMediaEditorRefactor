@@ -22,7 +22,7 @@ class Controls():
         self.jumpSpanLong = config.jump_span_long/duration
         self.jumpSpanShort = config.jump_span_short/duration
 
-        self.preview = config.preview_time/duration
+        self.preview = config.preview_offset/duration
 
         self.mediaFile = mediaFile
 
@@ -157,31 +157,61 @@ class Controls():
 
 
     def jumpSpecificTime(self, input_func, print_func):
+        """
+        Method that asks the user which direction and then how far the user wants
+        to move through the media file and then advances that far.
+
+        Parameters
+        ----------
+        input_func - function - a function that can print to the screen and 
+        accept the input from the user
+        print_func - fucntion - a function to only print to the screen
+
+        Returns
+        -------
+        None
+        """
         self.song.pause()
-        forward_input = input_func('forward?',1)
-        if forward_input.decode() == "b":
+        direction = input_func('forward?', 1)
+        reverse = 1
+        if direction.decode().lower() == "b":
             self.song.set_position(0)
-        elif forward_input.decode() == "e":
-            self.song.set_position(1)
-        else:
-            reverse = 1
-            if forward_input.decode() == "-":
+        elif direction.decode().lower() == "e":
+            self.song.set_position(1 - (self.jumpSpanLong))
+        elif direction.decode() == "-" or direction.decode() == "":
+            if direction.decode() == "-":
                 reverse = -1
+            hours = self.getNumFromInput("hours?", input_func, print_func) * 60 *60
+            minutes = self.getNumFromInput("minutes?", input_func, print_func) *60
+            seconds = self.getNumFromInput("seconds?", input_func, print_func) 
+            seconds = (seconds + minutes + hours) * reverse
+            seconds *= 1000
 
-            hours = self.getNumFromInput('hours?', input_func, print_func)
-            minutes = self.getNumFromInput('minutes?', input_func, print_func)
-            seconds = self.getNumFromInput('seconds?', input_func, print_func)
-            seconds = seconds + minutes * 60 + hours * 60 * 60 * reverse
-
-            
-
-            if 0 < abs(seconds) < self.duration :
-                self.song.set_position(self.duration / seconds)
+            if 0 < abs(seconds) < self.duration:
+                self.song.set_position(self.getPos() + seconds/self.duration)
             else:
-                print_func(self.utils.timeStamp(self.duration, seconds))
+                time = self.utils.millisecondsToTimeStamp(abs(seconds))
+                print_func("{} is beyond the confines of the media.".format(time))
+        else :
+            print_func("{} is not a valid option".format(direction.decode()))
         self.song.play()
 
     def getNumFromInput(self, prompt, input_func, print_func):
+        """
+        Method to get a number from the user. Hard coded to only accept the first
+        two numbers. It error checks the input.
+
+        Parameters
+        ----------
+        prompt - string - what should printed to screen to make request of user
+        input_func - function - a function that can print to the screen and 
+        accept the input from the user
+        print_func - fucntion - a function to only print to the screen
+
+        Returns
+        -------
+        int - the number as an integer.
+        """
         while True:
             result = input_func(prompt, 2)
             if result.decode() == '':

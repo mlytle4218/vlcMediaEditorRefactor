@@ -7,7 +7,8 @@ class Utils():
     def __init__(self):
         pass
 
-    def secondsToTimeStamp(self, seconds):
+    def millisecondsToTimeStamp(self, seconds):
+        seconds = int(seconds/1000)
         minutes = int((seconds / 60) % 60)
         hours = int((seconds / (60*60)) % 3600)
         sec = int(seconds - (minutes * 60) - (hours * 60 *60))
@@ -42,7 +43,7 @@ class Utils():
 
 if __name__ == "__main__":
     utils = Utils()
-    result = utils.secondsToTimeStamp(14643)
+    result = utils.millisecondsToTimeStamp(14643)
     print(result)
-    result = utils.secondsToTimeStamp(268)
+    result = utils.millisecondsToTimeStamp(268)
     print(result)
