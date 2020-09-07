@@ -7,11 +7,22 @@ class Utils():
     def __init__(self):
         pass
 
-    def millisecondsToTimeStamp(self, seconds):
-        seconds = int(seconds/1000)
-        minutes = int((seconds / 60) % 60)
-        hours = int((seconds / (60*60)) % 3600)
-        sec = int(seconds - (minutes * 60) - (hours * 60 *60))
+    def millisecondsToTimeStamp(self, milliseconds):
+        """
+        Method to create a time stamp for a number of milliseconds
+
+        Parameters
+        ----------
+        milliseconds - int - milliseconds
+
+        Returns
+        -------
+        string - the milliseconds in the form of hours, minutes and seconds
+        """
+        milliseconds = int(milliseconds/1000)
+        minutes = int((milliseconds / 60) % 60)
+        hours = int((milliseconds / (60*60)) % 3600)
+        sec = int(milliseconds - (minutes * 60) - (hours * 60 *60))
         time = ""
         if hours >= 1:
             time = "{} hours ".format(hours)
@@ -23,6 +34,18 @@ class Utils():
 
 
     def timeStamp(self,duration,current):
+        """
+        Method to create a time stamp for the current position in the media.
+
+        Parameters
+        ----------
+        duration - int - length of the media in seconds
+        current - float - the current position in the media playback
+
+        Returns
+        -------
+        string - the hours, minutes and seconds of the curretn playback position
+        """
         out = duration * current
         millis = int(out)
         if millis == 0:
