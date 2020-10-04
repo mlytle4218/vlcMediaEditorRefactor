@@ -9,7 +9,7 @@ from main import utils
 
 
 class Controls():
-    def __init__(self, duration, mediaFile):
+    def __init__(self, duration, print_func, mediaFile):
         """
         Class for separating the playback and controls for it.
 
@@ -18,11 +18,12 @@ class Controls():
         duration - the duration of the song in milliseconds
         mediaFile - the file information of the media to play back
         """
+        self.print_func = print_func
         self.duration = duration
-        self.jumpSpanLong = config.jump_span_long/duration
-        self.jumpSpanShort = config.jump_span_short/duration
+        self.jumpSpanLong = config.jump_span_long/self.duration
+        self.jumpSpanShort = config.jump_span_short/self.duration
 
-        self.preview = config.preview_offset/duration
+        self.preview = config.preview_offset/self.duration
 
         self.mediaFile = mediaFile
 
@@ -126,17 +127,21 @@ class Controls():
         -------
         None
         """
-        currentPos = self.song.get_position()
 
         # if song is in a stopped state
         if self.song.get_state() == 6:
-            if (currentPos + offSet) < 1:
+            if offSet < 0:
                 self.song = self.instance.media_player_new()
                 self.media = self.instance.media_new(self.mediaFile)
                 self.song.set_media(self.media)
                 self.song.play()
-                self.song.set_position(currentPos + offSet)
+                self.song.pause()
+                self.song.set_position(1-abs(offSet))
+                self.song.play()
+            else:
+                self.print_func("End of File.")
         else:
+            currentPos = self.song.get_position()
             # if the offset doesn't push past the outer bounds of the media
             # play back, continue
             if 0 < (currentPos + offSet) < 1:
@@ -149,7 +154,7 @@ class Controls():
             # offSet tries to go past end of file
             elif (currentPos + offSet) >  self.duration:
                 # self.song.set_position(self.duration)
-                pass
+                self.print_func("End of File.")
 
             # # offSet is in valid region
             # else:

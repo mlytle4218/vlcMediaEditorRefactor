@@ -41,7 +41,7 @@ class WorkerThread(threading.Thread):
 
         while not self.stoprequest.isSet():
             self.current_position = self.song.con.getPos()
-            if abs(self.current_position - self.last) > 0:
+            if  self.difference > abs(self.current_position - self.last) > 0:
                 try:
                     # self.song.printToScreen(str(self.current_position))
                     # pass
@@ -51,6 +51,10 @@ class WorkerThread(threading.Thread):
                         if self.last < (each.start + self.song.preview) < self.current_position:
                             logging.debug("print edit to screen at {}".format(self.current_position))
                             self.song.printToScreen("Edit {}".format(itr+1))
+
+                        # if each.start < self.current_position < each.end:
+                        #     logging.debug("print edit to screen at {}".format(self.current_position))
+                        #     self.song.printToScreen("Edit {}".format(itr+1))
 
                         # if the start point falls in the range of last and current_position
                         # then jump to the end

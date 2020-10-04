@@ -48,6 +48,7 @@ class start(object):
         # initialize controls for playback
         self.con = controls.Controls(
             self.state.duration,
+            self.printToScreen,
             fa.backup
         )
                 
