@@ -41,24 +41,21 @@ class WorkerThread(threading.Thread):
 
         while not self.stoprequest.isSet():
             self.current_position = self.song.con.getPos()
+            # logging.debug(abs(self.current_position - self.last))
             if  self.difference > abs(self.current_position - self.last) > 0:
                 try:
                     # self.song.printToScreen(str(self.current_position))
                     # pass
                     for itr,each in enumerate(self.song.state.marks):
-                        # if 0 < abs(self.current_position - self.last) < self.difference:
                         # If the start point falls in the range of
-                        if self.last < (each.start + self.song.preview) < self.current_position:
+                        if each.start <= self.current_position <= each.end:
                             logging.debug("print edit to screen at {}".format(self.current_position))
                             self.song.printToScreen("Edit {}".format(itr+1))
 
-                        # if each.start < self.current_position < each.end:
-                        #     logging.debug("print edit to screen at {}".format(self.current_position))
-                        #     self.song.printToScreen("Edit {}".format(itr+1))
-
                         # if the start point falls in the range of last and current_position
                         # then jump to the end
-                        if self.last < each.start < self.current_position:
+                        # if self.last < each.start < self.current_position:
+                        if each.start <= self.current_position <= each.end:
                             logging.debug("start jump to screen at {}".format(self.current_position))
                             logging.debug(each.start)
                             self.song.con.song.set_position(each.end)
@@ -98,7 +95,7 @@ class WorkerThread(threading.Thread):
                     
                 except Exception as ex:
                     logging.warning(ex)
-                self.last = self.current_position
+            self.last = self.current_position
 
     # used to shut down the worker thread
     def join(self, timeout=None):

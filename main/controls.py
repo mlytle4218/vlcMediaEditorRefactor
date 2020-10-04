@@ -34,8 +34,23 @@ class Controls():
         self.song = self.instance.media_player_new()
         self.media = self.instance.media_new(self.mediaFile)
         self.song.set_media(self.media)
+        self.song.reset = 0
 
         self.song.play()
+
+    def getComputerTime(self):
+        """
+        Method to get the current machine time. 
+        Parameters
+        ----------
+        None
+
+        Returns
+        -------
+        int 
+            current machine time in seconds.
+        """
+        return int(round(time.time() *1000))
 
     def pausePlay(self):
         state = self.song.get_state()
@@ -109,6 +124,7 @@ class Controls():
         -------
         None
         """
+        logging.debug('jump backward')
         self.changePosition(-self.jumpSpanLong)
     
     def changePosition(self, offSet):
@@ -138,6 +154,7 @@ class Controls():
                 self.song.pause()
                 self.song.set_position(1-abs(offSet))
                 self.song.play()
+                self.song.reset = self.getComputerTime()
             else:
                 self.print_func("End of File.")
         else:
@@ -148,12 +165,14 @@ class Controls():
                 self.song.set_position(currentPos + offSet)
 
             # offSet tries to go past beginning of file
-            elif (currentPos + offSet) < 0:
+            # stupid little hack - needs this because the get_position method is no
+            # returning anything and being interpreted as 0 sending the song back to
+            # the beginning
+            elif (currentPos + offSet) < 0 and abs(self.song.reset - self.getComputerTime()) > 1000:
                 self.song.set_position(0)
 
             # offSet tries to go past end of file
             elif (currentPos + offSet) >  self.duration:
-                # self.song.set_position(self.duration)
                 self.print_func("End of File.")
 
             # # offSet is in valid region
