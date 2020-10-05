@@ -39,6 +39,12 @@ class Controls():
 
         self.song.play()
 
+    def jumpToNextEdit(self):
+        nextMark = self.state.playBackNext()
+        logging.debug(nextMark.start + self.preview)
+        self.song.set_position(nextMark.start + self.preview)
+        pass
+
     def getComputerTime(self):
         """
         Method to get the current machine time. 

@@ -118,6 +118,10 @@ class start(object):
                 elif key == config.jump_specific:
                     self.con.jumpSpecificTime(self.getInput, self.printToScreen)
 
+                # cycle through edits
+                elif key == config.cycle_through_marks:
+                    self.con.jumpToNextEdit()
+
                 #EDITING
                 # create and begin an edit point
                 elif key == config.mark_start_pos:
