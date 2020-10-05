@@ -37,7 +37,10 @@ class start(object):
 
         # create a state object that holds and writes all the info about a song
         # and it's edits
-        self.state = state.State(fa.stateFile)
+        self.state = state.State(
+            fa.stateFile,
+            self.printToScreen
+            )
 
         # Try and see if there is already a file saved of the state information
         # If if can't be read, then it has to be created and info added

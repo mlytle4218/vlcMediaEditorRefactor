@@ -7,7 +7,8 @@ from main import mark
 
 
 class State():
-    def __init__(self, stateFile):
+    def __init__(self, stateFile, print_func):
+        self.print_func = print_func
         self.stateFile = stateFile
         self.marks = []
         self.currentMark = None
@@ -90,6 +91,14 @@ class State():
     def addMark(self, mark):
         """
         syntactic sugar to add mark to state
+
+        Parameters
+        ----------
+        Mark - mark
+
+        Returns
+        -------
+        None
         """
         self.marks.append(mark)
 
@@ -164,6 +173,14 @@ class State():
             self.updateScreen('Edit point started.')
             logging.debug('New edit point created at {}'.format(currentPos))
             return True
+        else:
+            self.print_func(
+                'Must finish existing Edit point begun at {}'.format(
+                    self.positionToMilliseconds(
+                        self.currentMark.start
+                        )
+                    )
+                )
         return False
 
     def endEditPoint(self, currentPos):

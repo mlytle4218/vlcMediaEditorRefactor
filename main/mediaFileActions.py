@@ -25,7 +25,7 @@ class MediaFileActions():
         self.stateFile = self.getStateFileName(self.inputFile)
         self.backup = self.backUpFileIfNotAlreadyBackedUp(self.inputFile)
         self.sample, self.bit = self.getRates(self.inputFile)
-        self.state = state.State(self.stateFile)
+        # self.state = state.State(self.stateFile, True)
         self.duration = self.getFileDuration()
 
     def getRates(self, inputFile):

@@ -94,6 +94,7 @@ class WorkerThread(threading.Thread):
                     
                     
                 except Exception as ex:
+                    logging.warning('WorkerThread')
                     logging.warning(ex)
             self.last = self.current_position
 

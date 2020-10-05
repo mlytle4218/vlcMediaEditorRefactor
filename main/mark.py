@@ -6,7 +6,7 @@ class Mark():
     """
     def __init__(self, position=-1):
         self.start = position
-        self.end = None
+        self.end = position
         self.is_editing = False
 
     def timeStamp(self,duration,current):
