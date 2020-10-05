@@ -9,7 +9,7 @@ from main import utils
 
 
 class Controls():
-    def __init__(self, duration, print_func, mediaFile):
+    def __init__(self, state, print_func, mediaFile):
         """
         Class for separating the playback and controls for it.
 
@@ -18,8 +18,9 @@ class Controls():
         duration - the duration of the song in milliseconds
         mediaFile - the file information of the media to play back
         """
+        self.state = state
         self.print_func = print_func
-        self.duration = duration
+        self.duration = self.state.duration
         self.jumpSpanLong = config.jump_span_long/self.duration
         self.jumpSpanShort = config.jump_span_short/self.duration
 
@@ -162,7 +163,24 @@ class Controls():
             # if the offset doesn't push past the outer bounds of the media
             # play back, continue
             if 0 < (currentPos + offSet) < 1:
-                self.song.set_position(currentPos + offSet)
+                newPos = currentPos + offSet
+                # for itr,each in enumerate(self.state.marks):
+                for each in self.state.marks:
+                    if each.start < newPos < each.end:
+                        if offSet < 0:
+                            newPos = each.start + offSet
+                            # self.print_func("Edit {}".format(itr+1))        
+                        else:
+                            newPos = each.end + offSet
+                            # self.print_func("Edit {}".format(itr+1))        
+
+                        # if offSet < 0:
+                        #     newPos = each[1].start + (offSet + (currentPos - each[1].end ) ) 
+                        # else:
+                        #     newPos = each[1].end + ( offSet - (each[1].start - currentPos))
+                    
+                    
+                    self.song.set_position(newPos)
 
             # offSet tries to go past beginning of file
             # stupid little hack - needs this because the get_position method is no
