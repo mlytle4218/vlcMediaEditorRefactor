@@ -65,7 +65,7 @@ volume_down = ord('d')
 
 jump_span_long = 5000
 jump_span_short = 1000
-preview_offset = -1000
+preview_offset = -2000
 
 
 jump_time_long = 5

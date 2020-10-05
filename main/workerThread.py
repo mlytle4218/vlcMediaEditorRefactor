@@ -41,20 +41,18 @@ class WorkerThread(threading.Thread):
 
         while not self.stoprequest.isSet():
             self.current_position = self.song.con.getPos()
-            # logging.debug(abs(self.current_position - self.last))
             if  self.difference > abs(self.current_position - self.last) > 0:
                 try:
-                    # self.song.printToScreen(str(self.current_position))
-                    # pass
                     for itr,each in enumerate(self.song.state.marks):
-                        # If the start point falls in the range of
-                        if each.start <= self.current_position <= each.end:
+                        # If the start point falls in the range of last and current_position
+                        # offset by the preview amount (preview is a negative number) then 
+                        # print the edit number at this point.
+                        if (each.start + self.song.preview) <= self.current_position <= (each.end - self.song.preview):
                             logging.debug("print edit to screen at {}".format(self.current_position))
                             self.song.printToScreen("Edit {}".format(itr+1))
 
                         # if the start point falls in the range of last and current_position
                         # then jump to the end
-                        # if self.last < each.start < self.current_position:
                         if each.start <= self.current_position <= each.end:
                             logging.debug("start jump to screen at {}".format(self.current_position))
                             logging.debug(each.start)
@@ -62,37 +60,7 @@ class WorkerThread(threading.Thread):
                             self.song.con.song.pause()
                             time.sleep(1)
                             self.song.con.song.play()
-
-                    #     if abs(self.current_position - self.last) < self.difference: 
-                    #         if self.song.is_editing:
-                    #             # self.song.log("{}:{}".format(self.last <= each.end, each.end <= self.current_position))
-                    #             # res = self.last - self.difference <= each.end <= self.current_position + self.difference
-                    #             # if res:
-                    #             #     self.song.log(res)
-                    #             try:
-                    #                 if self.last <= each.start <= self.current_position:
-                    #                     self.song.printToScreen('Block {} start'.format(itr + 1))
-                    #                     if each.start != 0:
-                    #                         self.song.startSound()
-                    #                 if self.last <= each.end <= self.current_position:
-                    #                     self.song.printToScreen('Block {} end'.format(itr + 1))
-                    #                     self.song.endSound()
-                    #             except Exception as ex:
-                    #                 self.song.log(ex)
-                    #         else:
-                    #             if self.last <= each.start <= self.current_position:
-                    #                 # self.song.log("each.start {}".format(each.start))
-                    #                 # keep the marks iterator up to date on the location in the file
-                    #                 self.song.markItr = itr
-                    #                 self.song.updateIters()
-                    #                 self.song.song.set_position(each.end)
-                    #                 self.song.printToScreen('Block {}'.format(itr + 1))
-                    #                 self.song.song.pause()
-                    #                 time.sleep(1)
-                    #                 self.song.song.play()
-
-                    
-                    
+ 
                 except Exception as ex:
                     logging.warning('WorkerThread')
                     logging.warning(ex)
